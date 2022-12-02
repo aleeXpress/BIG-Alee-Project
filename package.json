@@ -1,0 +1,19 @@
+{
+  "name": "big-alee-project",
+  "version": "1.0.0",
+  "description": "cours",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BIG-Alee/BIG-Alee-Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BIG-Alee/BIG-Alee-Project/issues"
+  },
+  "homepage": "https://github.com/BIG-Alee/BIG-Alee-Project#readme"
+}
