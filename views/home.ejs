@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/home.css" type="text/css" />
+    <title>Guns website</title>
+  </head>
+  <body>
+    <section>
+      <% guns.forEach(function(item,index){ %>
+      <ul class="guns-group">
+        <li class="">
+          <h1>Name :</h1>
+          <p><%= item.attributes.name %></p>
+        </li>
+        <li class="description">
+          <h1>Description :</h1>
+          <p><%= item.attributes.description %></p>
+        </li>
+        <li class="">
+          <h1>Price :</h1>
+
+          <p><%= item.attributes.price %></p>
+        </li>
+        <li class="">
+          <h1>Authorization :</h1>
+
+          <p class="button-68"><%= item.attributes.authorization %></p>
+        </li>
+        <li class="margin_top">
+          <a
+            class="button-85"
+            href="http://localhost:3000/guns?id=<%=item.id%>"
+          >
+            more</a
+          >
+        </li>
+      </ul>
+      <% }) %>
+    </section>
+  </body>
+</html>

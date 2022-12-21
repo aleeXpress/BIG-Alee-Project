@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "guns",
+  "info": {
+    "singularName": "gun",
+    "pluralName": "guns",
+    "displayName": "Gun"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "authorization": {
+      "type": "boolean"
+    }
+  }
+}
