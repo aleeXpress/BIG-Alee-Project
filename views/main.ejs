@@ -1,4 +1,5 @@
-section{
+<style>
+    section{
     display: flex;
     justify-content: space-evenly;
    
@@ -129,3 +130,38 @@ section{
 .button-68:hover {
   box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
 }
+</style>
+<main>
+    <section>
+        <% guns.forEach(function(item,index){ %>
+        <ul class="guns-group">
+          <li class="">
+            <h1>Name :</h1>
+            <p><%= item.attributes.name %></p>
+          </li>
+          <li class="description">
+            <h1>Description :</h1>
+            <p><%= item.attributes.description %></p>
+          </li>
+          <li class="">
+            <h1>Price :</h1>
+  
+            <p><%= item.attributes.price %></p>
+          </li>
+          <li class="">
+            <h1>Authorization :</h1>
+  
+            <p class="button-68"><%= item.attributes.authorization %></p>
+          </li>
+          <li class="margin_top">
+            <a
+              class="button-85"
+              href="http://localhost:3000/guns?id=<%=item.id%>"
+            >
+              more</a
+            >
+          </li>
+        </ul>
+        <% }) %>
+      </section>
+</main>

@@ -1,18 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/details.css">
-    <title>Document</title>
-</head>
-<body>
+<style>
+
+.button-11 {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  border-radius: 6px;
+  color: #3D3D3D;
+  background: #fff;
+  border: none;
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-11:focus {
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+  outline: 0;
+}
+</style>
     <h1>guns details </h1>
     
-    <ul class="button-89">
+    <ul class="button-11">
             <li> Name : <%= item.attributes.name %> </li>
             <li> Description : <%= item.attributes.description  %> </li>
+            <li> <img height="100" width="100" src=" <%= item.attributes.image  %>" /> </li>
             <li> Price : <%= item.attributes.price  %> </li>
             <li> Authorization : <%= item.attributes.authorization  %> </li>
       </ul>

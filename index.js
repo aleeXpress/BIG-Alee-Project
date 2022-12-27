@@ -1,6 +1,6 @@
 import express from "express";
 import  {getAllGuns, getGuns } from "./api/api.js";
-var app = express();
+const app = express();
 app.set("view engine", "ejs");
 app.use(express.static('public'));
 app.get("/", async function (req, res) {
@@ -18,6 +18,10 @@ app.get("/guns/", async function (req, res) {
     item:gun,
   });
 });
-
+app.get('/about'), function(req,res){
+  res.render('about.ejs',{
+    item : "none"
+  })
+}
 app.listen(3000);
 console.log("3000 is the magic port");

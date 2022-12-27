@@ -4,7 +4,8 @@
   "info": {
     "singularName": "gun",
     "pluralName": "guns",
-    "displayName": "Gun"
+    "displayName": "gun",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -17,11 +18,14 @@
     "description": {
       "type": "richtext"
     },
-    "price": {
-      "type": "decimal"
+    "image": {
+      "type": "string"
     },
     "authorization": {
       "type": "boolean"
+    },
+    "price": {
+      "type": "decimal"
     }
   }
 }
