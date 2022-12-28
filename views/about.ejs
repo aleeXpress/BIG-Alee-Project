@@ -1,9 +1,21 @@
 <style>
-    
+    .hauteur{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 90vh;
+    }
+  
 </style>
-<p>
-    Projet sur le github <a href="https://github.com/BIG-Alee">Big Alee</a>
-</p>
-<p>
-    Edudiant au Cfa numerique de Dillon
-</p>
+<%- include("./partials/header") %> 
+<section class="hauteur">
+    
+    <p>
+        Projet sur le github <a href="https://github.com/BIG-Alee">Big Alee</a>
+    </p>
+    <p>
+        Edudiant au Cfa numerique de Dillon
+    </p>
+</section>
+<%- include('./partials/footer'); %> 

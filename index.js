@@ -18,10 +18,8 @@ app.get("/guns/", async function (req, res) {
     item:gun,
   });
 });
-app.get('/about'), function(req,res){
-  res.render('about.ejs',{
-    item : "none"
-  })
-}
+app.get("/about", (req, res) => {
+  res.render("about");
+});
 app.listen(3000);
 console.log("3000 is the magic port");
